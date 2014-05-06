@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>chatterbox</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+
+    <!-- dependencies -->
+    <script src="bower_components/jquery/jquery.min.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <!-- your scripts -->
+    <script src="scripts/config.js"></script>
+    <script src="scripts/app.js"></script>
+  </head>
+  <body>
+    <div id="main" class="container">
+      <h1>chatterbox</h1>
+      <h2>Current Chat Room:<span id="currentRoom"></span></h2>
+      <div class="form-group">
+      <div class="row">
+        <div class="col-md-8">
+         <select id="rooms" class="form-control"></select>
+        </div>
+        <div class="col-md-4">
+          <button id="newRoom" class="btn btn-default">Create New Room</button>
+        </div>
+      </div>
+      </div>
+      <div class="form-group">
+        <textarea id="message" class="form-control"></textarea>
+        <button id="send" class="btn btn-default">Send</button>
+      </div>
+      <div class="chat">
+        <ul class="list-group">
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
